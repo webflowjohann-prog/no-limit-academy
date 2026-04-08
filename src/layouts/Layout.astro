@@ -210,11 +210,15 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
 /* ─── Bandeau CTA (fond sombre — rythme visuel) ─── */
 .cta-band { position: relative; padding: 120px var(--pad-x); text-align: center; overflow: hidden; background: var(--bg-dark); }
 .cta-band-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.2); }
-.cta-band-inner { position: relative; z-index: 2; }
-.cta-band .section-title { color: var(--text-on-dark); margin-bottom: 20px; }
+.cta-band-inner { position: relative; z-index: 2; max-width: 860px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; align-items: center; }
+.cta-band .section-title { color: var(--text-on-dark); margin-bottom: 20px; width: 100%; }
 .cta-band .section-title em { color: var(--gold); }
-.cta-band .section-desc { color: rgba(245,240,235,0.6); margin: 0 auto 40px; }
+.cta-band .section-desc { color: rgba(245,240,235,0.6); margin: 0 auto 40px; text-align: center; }
 .cta-band .label { color: var(--gold); }
+.cta-band .btn-outline { border-color: rgba(245,240,235,0.25); color: var(--text-on-dark); }
+.cta-band .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+/* ─── Groupe de boutons centré (hors cta-band) ─── */
+.btns-center { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; width: 100%; }
 
 /* ─── Expériences ─── */
 .exp-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--border); margin-top: 56px; }
