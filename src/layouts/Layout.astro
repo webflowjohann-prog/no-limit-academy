@@ -4,8 +4,8 @@ export interface Props {
   description?: string;
 }
 const {
-  title = 'No Limit Academy | Coaching d\'Elite pour Dirigeants Visionnaires',
-  description = 'No Limit Academy connecte les meilleurs coachs avec les dirigeants visionnaires. Sante preventive, experiences transformationnelles et communaute de leaders.',
+  title = 'No Limit Academy | Coaching d\'Élite pour Dirigeants Visionnaires',
+  description = 'No Limit Academy connecte les meilleurs coachs avec les dirigeants visionnaires. Santé préventive, expériences transformationnelles et communauté de leaders.',
 } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
@@ -88,7 +88,7 @@ h1 em,h2 em,.hero-title em,.section-title em{font-family:'Cormorant Garamond',se
     <a href="/concept" class={currentPath.startsWith('/concept') ? 'active' : ''}>Concept</a>
     <a href="/programmes" class={currentPath.startsWith('/programmes') || currentPath.startsWith('/ascent') || currentPath.startsWith('/summit') || currentPath.startsWith('/legacy') ? 'active' : ''}>Programmes</a>
     <a href="/coachs" class={currentPath.startsWith('/coachs') ? 'active' : ''}>Coachs</a>
-    <a href="/experiences" class={currentPath.startsWith('/experiences') ? 'active' : ''}>Experiences</a>
+    <a href="/experiences" class={currentPath.startsWith('/experiences') ? 'active' : ''}>Expériences</a>
     <a href="/science" class={currentPath.startsWith('/science') ? 'active' : ''}>Science</a>
     <a href="/candidature" class="nav-cta">Postuler</a>
   </div>
@@ -103,14 +103,14 @@ h1 em,h2 em,.hero-title em,.section-title em{font-family:'Cormorant Garamond',se
   <div class="footer-grid">
     <div>
       <div class="footer-brand">No Limit <span>Academy</span></div>
-      <p class="footer-tagline">Coaching d'elite, science preventive et experiences transformationnelles. Concu exclusivement pour les dirigeants visionnaires.</p>
+      <p class="footer-tagline">Coaching d'élite, science préventive et expériences transformationnelles. Conçu exclusivement pour les dirigeants visionnaires.</p>
     </div>
     <div class="footer-col">
-      <p class="footer-col-title">L'academie</p>
+      <p class="footer-col-title">L'académie</p>
       <a href="/concept">Concept</a>
       <a href="/programmes">Programmes</a>
       <a href="/coachs">Coachs</a>
-      <a href="/experiences">Experiences</a>
+      <a href="/experiences">Expériences</a>
       <a href="/science">Science</a>
     </div>
     <div class="footer-col">
@@ -129,8 +129,8 @@ h1 em,h2 em,.hero-title em,.section-title em{font-family:'Cormorant Garamond',se
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 No Limit Academy. Tous droits reserves.</span>
-    <span>Un projet IKONIK Artisan Creatif</span>
+    <span>&copy; 2026 No Limit Academy. Tous droits réservés.</span>
+    <span>Un projet IKONIK Artisan Créatif</span>
   </div>
 </footer>
 
